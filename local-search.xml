@@ -5,8 +5,8 @@
   
   <entry>
     <title>hexo使用笔记</title>
-    <link href="/2021/03/07/2021-03-07-hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
-    <url>/2021/03/07/2021-03-07-hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+    <link href="/2021/03/07/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <url>/2021/03/07/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
     
     <content type="html"><![CDATA[<h2 id="1-文件创建"><a href="#1-文件创建" class="headerlink" title="1. 文件创建"></a>1. 文件创建</h2><blockquote><p>$ hexo new [layout] “title”</p></blockquote><h2 id="2-文件提交"><a href="#2-文件提交" class="headerlink" title="2. 文件提交"></a>2. 文件提交</h2><p>提交”三部曲“</p><ol><li><p>清除缓存</p><blockquote><p>$ hero clean</p></blockquote></li><li><p>生成静态文件</p><blockquote><p>$ hexo g</p></blockquote></li><li><p>部署到服务器</p><blockquote><p>$ hexo d</p></blockquote></li></ol><p>最后，由于未知问题，需要输入git权限密码</p><p>##3. </p>]]></content>
     
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test2</title>
-    <link href="/2021/01/30/2021-01-30-test2/"/>
-    <url>/2021/01/30/2021-01-30-test2/</url>
+    <link href="/2021/01/30/test2/"/>
+    <url>/2021/01/30/test2/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>test2</title>
-    <link href="/2021/01/29/2021-01-29-test2/"/>
-    <url>/2021/01/29/2021-01-29-test2/</url>
+    <link href="/2021/01/29/test2/"/>
+    <url>/2021/01/29/test2/</url>
     
     <content type="html"><![CDATA[<p>test2</p>]]></content>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>test</title>
-    <link href="/2021/01/21/2021-01-21-test/"/>
-    <url>/2021/01/21/2021-01-21-test/</url>
+    <link href="/2021/01/21/test/"/>
+    <url>/2021/01/21/test/</url>
     
     <content type="html"><![CDATA[<h2 id="我是标题"><a href="#我是标题" class="headerlink" title="我是标题"></a>我是标题</h2><h4 id="我是二级标题"><a href="#我是二级标题" class="headerlink" title="我是二级标题"></a>我是二级标题</h4><p>标题，段落，列表</p><p>引用，代码，</p><p>链接，图标，表格</p><p>html标签</p>]]></content>
     
