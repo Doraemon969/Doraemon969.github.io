@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Want Weapp UI框架使用</title>
+    <link href="/2021/05/28/Want-Weapp-UI%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/"/>
+    <url>/2021/05/28/Want-Weapp-UI%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一、基础组件"><a href="#一、基础组件" class="headerlink" title="一、基础组件"></a>一、基础组件</h2><ol><li>Button按钮</li><li>Cell表格</li><li>Icon图标</li><li>Image图片</li><li>Layout布局</li><li>Popup弹出层</li><li>Transition动画</li></ol><h2 id="二、表单组件"><a href="#二、表单组件" class="headerlink" title="二、表单组件"></a>二、表单组件</h2><ol><li>Calendar日历</li><li>Checkbox复选框</li><li>DatetimePicker时间选择（与日历相比，精确到时间）</li><li>field输入框</li></ol><h2 id="三、反馈组件"><a href="#三、反馈组件" class="headerlink" title="三、反馈组件"></a>三、反馈组件</h2><h2 id="四、展示组件"><a href="#四、展示组件" class="headerlink" title="四、展示组件"></a>四、展示组件</h2><h2 id="五、导航组件"><a href="#五、导航组件" class="headerlink" title="五、导航组件"></a>五、导航组件</h2><h2 id="六、业务组件"><a href="#六、业务组件" class="headerlink" title="六、业务组件"></a>六、业务组件</h2><h2 id="七、其他"><a href="#七、其他" class="headerlink" title="七、其他"></a>七、其他</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>前端UI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>hexo使用笔记</title>
     <link href="/2021/03/07/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
     <url>/2021/03/07/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
