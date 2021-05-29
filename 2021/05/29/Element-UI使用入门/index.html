@@ -17,7 +17,7 @@
   <meta name="description" content="个人博客, 程序员, web技术, 生活感悟, 马克思主义哲学, 童年回忆, 生活小确幸">
   <meta name="author" content="Jerry Bian">
   <meta name="keywords" content="">
-  <title>Vue - Jerry Bian&#39;s world</title>
+  <title>Element UI使用入门 - Jerry Bian&#39;s world</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -174,7 +174,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.4)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Vue">
+            <span class="h2" id="subtitle" title="Element UI使用入门">
               
             </span>
 
@@ -189,8 +189,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-28 18:32" pubdate>
-        2021年5月28日 晚上
+      <time datetime="2021-05-29 09:59" pubdate>
+        2021年5月29日 上午
       </time>
     </span>
   
@@ -226,18 +226,130 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Vue</h1>
+            <h1 style="display: none">Element UI使用入门</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月28日 晚上
+                  本文最后更新于：2021年5月29日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><ol>
-<li>父子组件数据传递</li>
-<li>父子组件方法传递</li>
+              <ol>
+<li>有React和Angular其余两个版本</li>
+<li>有两种安装方式，npm和CDN。孰优孰劣，具体问题具体分析。</li>
+<li>国际化，即配置不同语言。element提供</li>
+<li>自定义主题，主题可自定义</li>
+<li>内置过渡动画，淡入淡出、zoom缩放、collapse展开折叠</li>
+</ol>
+<p>组件</p>
+<ol>
+<li><p>基础</p>
+<ol>
+<li><p> 布局：基础布局、分栏布局、分栏偏移、混合布局、响应式布局（参考了bootstrap的五个相应尺寸）、对齐方式（左对齐、右对齐、居中对齐、两端对齐，分散对齐）</p>
+</li>
+<li><p>布局容器：在布局的基础上优化的整体布局</p>
+</li>
+<li><p>颜色：主色、辅助色、中性色（灰黑）。三种颜色颜色分明，更容易接收信息。</p>
+</li>
+<li><p>typography字体：提供了字体</p>
+</li>
+<li><p>border边框：边框实虚线、倒角（大小圆形）、投影</p>
+</li>
+<li><p>icon图标：提供了许多icon图标</p>
+</li>
+<li><p>Button按钮：</p>
+<ol>
+<li>按钮颜色（红危险，绿成功，蓝主色，黄警告，灰信息，和空白）</li>
+<li>状态（禁用、加载）</li>
+<li>形状（圆角、文字按钮、图标）</li>
+</ol>
+</li>
+<li><p>Link文字链接：</p>
+<ol>
+<li>颜色</li>
+<li>状态（没有加载）</li>
+<li>形状（下划线、图标）</li>
+</ol>
+</li>
+<li><p>只要是可以点击的（如按钮，链接），都有颜色、状态、形状。只不过不同的点击形式略有区别</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>form表单</p>
+<ol>
+<li>Radio单选框：<ol>
+<li>radio收音机，因为美国老式收音机的按钮只能有一个被点击，和单选十分相似，所以用radio表示单选。</li>
+<li>radio选项不宜过多（两三个为宜），若三个以上，则使用select选择器</li>
+<li>颜色（单选不需要颜色区分）、状态（禁用）、形状（按钮形式、带边框）</li>
+</ol>
+</li>
+<li>Input输入框：<ol>
+<li>状态：可禁用、可清空、可显隐（密码）、长度限制</li>
+<li>形状：带icon图标、尺寸</li>
+<li>类型：文本/密码、文本域（可自适应）、复合型（前置/后置元素，元素可以是文本/select选择/按钮）</li>
+<li>高级：带输入建议，全部触发、输入后匹配触发、自定义（输入建议的）显示、远程搜索</li>
+</ol>
+</li>
+<li>InputNumber计数器：<ol>
+<li>状态：可禁用</li>
+<li>形状：加减按钮的分布、尺寸</li>
+<li>类型：自定义步数（包括小数）</li>
+</ol>
+</li>
+<li>Select选择器<ol>
+<li>状态：选择器/选项禁用，</li>
+<li>形状：</li>
+<li>类型：可删除、多选、自定义选项、选项分组、本地搜索、远程搜索、创建选项</li>
+</ol>
+</li>
+<li>Cascader级联选择器：<ol>
+<li>状态：禁用选项、点击触发、hover触发、仅显示最后一级、动态加载选项</li>
+<li>形状：可清空</li>
+<li>类型：可多选（全选/折叠）、选择任意一级选项、可搜索</li>
+</ol>
+</li>
+<li>Switch开关：可做开关、二选一，可搭配文字描述。禁用状态。</li>
+<li>Slider滑块：<ol>
+<li>状态：初始值的位置、是否展示数字、禁用、展示部分数值</li>
+<li>形状：默认横向、可以竖向。可以间断（显/隐）</li>
+<li>类型：选择范围（可做范围选择器）</li>
+</ol>
+</li>
+<li>TimePicker时间选择器：可选时间，时间点，时间点范围</li>
+<li>DatePicker日期选择器：选择日期、周、月、年。多个日期，日期范围。还可以带快捷选择。带有日期和时间点（更精确）带范围。起始与结束时刻。</li>
+<li>Upload上传：上传种类：手动/拖拽、文件/头像/图片、文件缩略/列表、文件大小控制。</li>
+<li>Rate评分：<ol>
+<li>三个方面（颜色、文字、icon图标）五星好评！（可在不同等级上给不同颜色）、辅助文字（对应每一颗星星）、不同评价对应不同图标。</li>
+<li>状态：只读/读写</li>
+</ol>
+</li>
+<li>ColorPicker颜色选择器：<ol>
+<li>颜色：可设默认值，没有默认值默认为透明色。可设透明度。</li>
+<li>形状：尺寸</li>
+</ol>
+</li>
+<li>Transfer穿梭框：左右列表内容的更换，优化“可以对列表内容实现筛选（搜索功能筛选）”。样式可以自定义（按钮大小颜色、选项状态–禁用）。</li>
+<li>Form表单：单选、多选、选择器、输入框、按钮集成。<ol>
+<li>注意表form单中如果有input输入框时，如果在输入框中按下回车键，则自动提交表单。所以，阻止则用prevent修饰符。</li>
+<li>若form表单受位置限制没法竖直写下来，则使用横排写。</li>
+<li>input前面的描述问题排版可以为左对齐，有对齐，顶部对齐。</li>
+<li>表单验证，可以自定义。（数字）</li>
+<li>可以增删数据项。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Data日期</p>
+</li>
+<li><p>Notice注意</p>
+</li>
+<li><p>Navigation导航</p>
+</li>
+<li><p>others其他</p>
+</li>
 </ol>
 
             </div>
@@ -255,9 +367,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/05/29/Element-UI%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/">
+                      <a href="/2021/05/29/Vue-Router%E5%9F%BA%E7%A1%80/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Element UI使用入门</span>
+                        <span class="hidden-mobile">Vue Router基础</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -265,8 +377,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/05/28/Want-Weapp-UI%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/">
-                        <span class="hidden-mobile">Want Weapp UI框架使用</span>
+                      <a href="/2021/05/28/Vue/">
+                        <span class="hidden-mobile">Vue</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
