@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Vue</title>
+    <link href="/2021/05/28/Vue/"/>
+    <url>/2021/05/28/Vue/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><ol><li>父子组件数据传递</li><li>父子组件方法传递</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Want Weapp UI框架使用</title>
     <link href="/2021/05/28/Want-Weapp-UI%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/"/>
     <url>/2021/05/28/Want-Weapp-UI%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</url>
