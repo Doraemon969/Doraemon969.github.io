@@ -230,14 +230,31 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月28日 晚上
+                  本文最后更新于：2021年6月2日 上午
                 
               </p>
             
             <div class="markdown-body">
               <h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><ol>
+<li>v-on事件监听(@)、v-bind数据绑定(:)</li>
 <li>父子组件数据传递</li>
 <li>父子组件方法传递</li>
+<li>事件：用<code>v-on：</code>监听，<ol>
+<li>有如下事件：click点击、hover盘旋、focus聚焦</li>
+</ol>
+</li>
+<li>事件修饰符：对事件进行细化区分<ol>
+<li>.native监听原生事件</li>
+<li>.sync事件修饰符：在父子组件传值中，子组件向父组件中传值，简化的写法。</li>
+<li><code>a=&quot;b&quot; :update:a=&quot;b=$event&quot;</code> 简写为 <code>a.sync=&quot;b&quot;</code></li>
+<li>.sync事件修饰符中，和v-bind使用时，属性值可以是data中的属性值、对象（不能为语法表达式、不能是字面量，因为直接写在组件属性中，解析过于复杂）。对象中的每一个属性值都会被绑定</li>
+</ol>
+</li>
+<li>其他<ol>
+<li>同步和异步：同步等待，异步不等待。</li>
+<li></li>
+</ol>
+</li>
 </ol>
 
             </div>
