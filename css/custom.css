@@ -1,8 +1,15 @@
-ol ol {
+/* 一级有序标题格式 */
+ol li{
     /* list-style-type: lower-roman; */
     list-style-type: decimal;
 }
 
-ol ol ol {
-    list-style-type: ower-alpha;
+/* 二级有序标题格式 */
+ol li ol li{
+    list-style-type: decimal;
+}
+
+/* 三级有序标题格式 */
+ol li ol li ol li{
+    list-style-type: lower-alpha;
 }
