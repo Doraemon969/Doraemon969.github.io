@@ -234,7 +234,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月31日 下午
+                  本文最后更新于：2021年6月16日 下午
                 
               </p>
             
@@ -263,6 +263,113 @@
 <p> 也可以用git checrry-pick commitid合并</p>
 </li>
 </ol>
+<h2 id="GIT分支管理策略"><a href="#GIT分支管理策略" class="headerlink" title="GIT分支管理策略"></a>GIT分支管理策略</h2><h4 id="1-主分支Master：自动建立，对外发布版本"><a href="#1-主分支Master：自动建立，对外发布版本" class="headerlink" title="1. 主分支Master：自动建立，对外发布版本"></a>1. 主分支Master：自动建立，对外发布版本</h4><h4 id="2-开发分支Develop："><a href="#2-开发分支Develop：" class="headerlink" title="2. 开发分支Develop："></a>2. 开发分支Develop：</h4><ol>
+<li><p>创建dev分支进行开发：git checkout -b develop master</p>
+</li>
+<li><p>切换到master分支：git checkout master</p>
+</li>
+<li><p>开发完成后，在master分支上对dev分支进行合并：git merge –no-ff develop</p>
+<p>–no-ff：正常合并外，在Master分支上生成一个新节点。保证了版本的清晰演进。</p>
+</li>
+</ol>
+<h4 id="3-临时性分支"><a href="#3-临时性分支" class="headerlink" title="3. 临时性分支"></a>3. 临时性分支</h4><ol>
+<li><h6 id="feature分支：开发新特性。从dev分支中拷贝出来的，开发完成后合并到dev分支中。命名形式为：teature"><a href="#feature分支：开发新特性。从dev分支中拷贝出来的，开发完成后合并到dev分支中。命名形式为：teature" class="headerlink" title="feature分支：开发新特性。从dev分支中拷贝出来的，开发完成后合并到dev分支中。命名形式为：teature-"></a>feature分支：开发新特性。从dev分支中拷贝出来的，开发完成后合并到dev分支中。命名形式为：teature-</h6><ol>
+<li><p>创建新分支：git checkout -b feature-x develop</p>
+</li>
+<li><p>开发完成后，合并到dev分支：   </p>
+<blockquote>
+<p>git checkout develop</p>
+</blockquote>
+<blockquote>
+<p>git merge –no-ff feature-x</p>
+</blockquote>
+<ol start="3">
+<li>删除feature分支</li>
+</ol>
+<blockquote>
+<p>git branch -d feature-x</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>release分支：预发布，供测试使用。从dev分支拷贝而来，开发完成后合并到master和dev中。命名：release-</p>
+<ol>
+<li><p>创建新分支：    </p>
+<blockquote>
+<p>git checkout -b release-1.2 develop</p>
+</blockquote>
+<ol start="2">
+<li>测试确认没有问题后，合并到master分支：</li>
+</ol>
+<blockquote>
+<p>git checkout master</p>
+</blockquote>
+<blockquote>
+<p>git merge –no-ff release-1.2</p>
+</blockquote>
+<blockquote>
+<p>// 对合并生成的新节点，生成一个tag标签</p>
+<p>git tag -a 1.2</p>
+</blockquote>
+<ol start="3">
+<li>再合并到dev分支中</li>
+</ol>
+<blockquote>
+<p>git checkout develop</p>
+</blockquote>
+<blockquote>
+<p>git merge –no-ff release-1.2</p>
+</blockquote>
+<ol start="4">
+<li>最后，删除预发布分支</li>
+</ol>
+<blockquote>
+<p>git branch -d release-1.2</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li><p>fixbug分支：修复bug。从master分支拷贝而来，而后合并到master和dev分支。命名：fixbug-</p>
+<ol>
+<li><p>创建分支</p>
+<blockquote>
+<p>git checkout -b fixbug-0.1 master</p>
+</blockquote>
+<ol start="2">
+<li>修补结束后，合并到master分支</li>
+</ol>
+<blockquote>
+<p>git checkout master</p>
+</blockquote>
+<blockquote>
+<p>git merge –no-ff fixbug-0.1</p>
+</blockquote>
+<blockquote>
+<p>git tag -a 0.1.1</p>
+</blockquote>
+<ol start="3">
+<li>再合并到dev中</li>
+</ol>
+<blockquote>
+<p>git checkout develop</p>
+</blockquote>
+<blockquote>
+<p>git merge –no-ff fixbug-0.1</p>
+</blockquote>
+<ol start="4">
+<li>最后，删除fixbug分支</li>
+</ol>
+<blockquote>
+<p>git branch -d fixbug-0.1</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
 
             </div>
             <hr>
@@ -278,6 +385,12 @@
                 <div class="post-prevnext">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2021/06/08/Vue%E5%9F%BA%E7%A1%80-%E9%A1%B9%E7%9B%AE/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Vue基础+项目</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
